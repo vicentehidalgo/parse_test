@@ -2,6 +2,9 @@
 app.controller('homeController', ['$scope', '$http', function($scope, $http) {
     $scope.logout = logout;
     $scope.init = init;
+    $scope.user = Parse.User.current();
+
+    console.log("user", $scope.user);
 
 
     function logout() {
@@ -14,7 +17,7 @@ app.controller('homeController', ['$scope', '$http', function($scope, $http) {
       if (Parse.User.current() == null){
       	window.location = "#/login";
       }else{
-        
+
       }
     }
 
