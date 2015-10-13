@@ -1,8 +1,5 @@
-angular.module('homeController', ['ngRoute'])
+app.controller('homeController', ['$scope', '$http', function($scope, $http) {
 
-
-
-.controller('homeController','$scope', '$http', [function($scope, $http) {
   $scope.init = function(){
     console.log('asdasdadasd');
   }
