@@ -14,9 +14,9 @@ app.config(['$routeProvider',
     	templateUrl: 'view/signUp.html',
     	controller: 'signUpController'
     })
-    .when('/registered', {
-        templateUrl: 'view/registered.html',
-        controller: 'registeredController'
+    .when('/home', {
+        templateUrl: 'view/home.html',
+        controller: 'homeController'
     })
 
 

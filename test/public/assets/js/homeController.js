@@ -1,12 +1,21 @@
 
 app.controller('homeController', ['$scope', '$http', function($scope, $http) {
+    $scope.logout = logout;
+    $scope.init = init;
 
-  $scope.init = function(){
-    console.log('asdasdadasd');
-    if (Parse.User.current() != null){
-    	window.location = "#/registered";
-    } else {
-    	window.location = "#/login";
+
+    function logout() {
+      Parse.User.logOut();
+      console.log("OK");
+      window.location = "#/login";
     }
-  }
+
+    function init(){
+      if (Parse.User.current() == null){
+      	window.location = "#/login";
+      }else{
+        
+      }
+    }
+
 }]);
