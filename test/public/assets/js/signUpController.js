@@ -6,7 +6,6 @@ app.controller('signUpController', ['$scope', '$http', function($scope, $http) {
       var user = new Parse.User();
       user.set("username", $scope.user.inputUserName);
       user.set("password", $scope.user.inputPassword);
-      user.set("email", $scope.user.inputEmail);
 
       user.signUp(null, { success: userRegistered,
                             error: gotError});

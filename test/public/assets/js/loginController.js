@@ -3,7 +3,7 @@ app.controller('loginController', ['$scope', '$http', function($scope, $http) {
     $scope.login = login;
 
     function login(){
-		Parse.User.logIn($scope.user.inputEmail, $scope.user.inputPassword, {
+		Parse.User.logIn($scope.user.inputUserName, $scope.user.inputPassword, {
                         	success: userLoggedIn,
                         	error: gotError
                         });
