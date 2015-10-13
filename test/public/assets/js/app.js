@@ -18,6 +18,10 @@ app.config(['$routeProvider',
         templateUrl: 'view/home.html',
         controller: 'homeController'
     })
+    .when('/logOut', {
+        templateUrl: 'view/login.html',
+        controller: 'logOutController'
+    })
 
 
     ;
