@@ -4,11 +4,11 @@ app.controller('signUpController', ['$scope', '$http', function($scope, $http) {
 
     function signUp(){
       var user = new Parse.User();
-      user.set("username", $scope.user.inputEmail);
+      user.set("username", $scope.user.inputUserName);
       user.set("password", $scope.user.inputPassword);
       user.set("email", $scope.user.inputEmail);
 
-      user.signUp(null, { success: userRegistered, 
+      user.signUp(null, { success: userRegistered,
                             error: gotError});
 
       function userRegistered(user){
@@ -16,7 +16,7 @@ app.controller('signUpController', ['$scope', '$http', function($scope, $http) {
       }
       function gotError(user, err) {
         console.log("KO ", err);
-      }   
+      }
     }
 
 }]);
