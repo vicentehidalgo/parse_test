@@ -25,6 +25,7 @@ app.controller('homeController', ['$scope', '$http', '$rootScope', function($sco
           {title:'Withdrwan', url:'#/withdrwan'},
           {title:'Transfer', url:'#/transfer'},
           {title:'Deposit', url:'#/deposit'}
+          {title:'Log Out', url:'#/logOut'}
         ];
       }
     }
