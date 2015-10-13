@@ -2,9 +2,9 @@
 app.controller('homeController', ['$scope', '$http', '$rootScope', function($scope, $http, $rootScope) {
     $scope.logout = logout;
     $scope.init = init;
-    $scope.user = Parse.User.current();
 
-    console.log("user", $scope.user);
+    $scope.user = {};
+    $scope.user.nombre = Parse.User.current().get("username");
 
 
 
