@@ -1,5 +1,5 @@
 
-app.controller('loginController', ['$scope', '$http', function($scope, $http) {
+app.controller('loginController', ['$scope', '$http','$rootScope', function($scope, $http, $rootScope) {
     $scope.login = login;
 
     function login(){

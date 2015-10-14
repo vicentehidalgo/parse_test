@@ -11,5 +11,5 @@ app.controller('globalController', ['$scope', '$http', '$rootScope', function($s
 	    } else {
 	    	window.location = "#/login";
 	    }
-  	}	
+  	}
 }]);
