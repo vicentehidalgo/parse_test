@@ -42,6 +42,10 @@ app.config(['$routeProvider',
         templateUrl: 'view/deposit.html',
         controller: 'depositController'
     })
+    .when('/account/:accountNumber', {
+        templateUrl: 'view/account.html',
+        controller: 'accountController'
+    })
     .otherwise({
         redirectTo: '/home'
       });
