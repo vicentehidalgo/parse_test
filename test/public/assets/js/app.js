@@ -22,7 +22,27 @@ app.config(['$routeProvider',
         templateUrl: 'view/login.html',
         controller: 'logOutController'
     })
-
-
-    ;
+    .when('/accounts', {
+        templateUrl: 'view/accounts.html',
+        controller: 'accountsController'
+    })
+    .when('/transactions', {
+        templateUrl: 'view/transactions.html',
+        controller: 'transactionsController'
+    })
+    .when('/withdrwan', {
+        templateUrl: 'view/withdrwan.html',
+        controller: 'withdrwanController'
+    })
+    .when('/transfer', {
+        templateUrl: 'view/transfer.html',
+        controller: 'transferController'
+    })
+    .when('/deposit', {
+        templateUrl: 'view/deposit.html',
+        controller: 'depositController'
+    })
+    .otherwise({
+        redirectTo: '/home'
+      });
   }]);
