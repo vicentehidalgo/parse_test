@@ -21,6 +21,8 @@ app.controller('homeController', ['$scope', '$http', '$rootScope', function($sco
         ];
         $scope.user = {};
         $scope.user.nombre = Parse.User.current().get("username");
+
+
       }
     }
 
