@@ -17,7 +17,7 @@
                         <tr ng-repeat="account in accounts">
                             <td ng-bind="account.get('iban')"></td>
                             <td ng-bind="account.get('name')"></td>
-                            <td ng-bind="account.get('balance')"></td>
+                            <td ng-bind="{{account.get('balance')}}+' €'"></td>
                         </tr>
                     </tbody>
                 </table>
