@@ -30,9 +30,9 @@ app.config(['$routeProvider',
         templateUrl: 'view/transactions.html',
         controller: 'transactionsController'
     })
-    .when('/withdrwan', {
-        templateUrl: 'view/withdrwan.html',
-        controller: 'withdrwanController'
+    .when('/withdrawn', {
+        templateUrl: 'view/withdrawn.html',
+        controller: 'withdrawnController'
     })
     .when('/transfer', {
         templateUrl: 'view/transfer.html',

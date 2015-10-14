@@ -14,7 +14,7 @@ app.controller('homeController', ['$scope', '$http', '$rootScope', function($sco
           {title:'Home', url:'#/home', active: false},
           {title:'Accounts', url:'#/accounts', active: false},
           {title:'Transactions', url:'#/transactions', active: false},
-          {title:'Withdrwan', url:'#/withdrwan', active: false},
+          {title:'Withdrawn', url:'#/withdrawn', active: false},
           {title:'Transfer', url:'#/transfer', active: false},
           {title:'Deposit', url:'#/deposit', active: false},
           {title:'Log Out', url:'#/logOut', active: false }
