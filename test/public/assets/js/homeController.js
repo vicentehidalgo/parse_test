@@ -11,12 +11,9 @@ app.controller('homeController', ['$scope', '$http', '$rootScope', function($sco
       	window.location = "#/login";
       }else{
         $rootScope.global_menu = [
-          {title:'Home', url:'#/home', active: false},
           {title:'Accounts', url:'#/accounts', active: false},
           {title:'Transactions', url:'#/transactions', active: false},
-          {title:'Withdrawn', url:'#/withdrawn', active: false},
-          {title:'Transfer', url:'#/transfer', active: false},
-          {title:'Deposit', url:'#/deposit', active: false},
+          {title:'Operations', url:'#/operations', active: false},
           {title:'Log Out', url:'#/logOut', active: false }
         ];
         $scope.user = {};
