@@ -1,4 +1,6 @@
-angular.controller('logOutController', ['$scope', '$http', '$rootScope', function($scope, $http, $rootScope) {
+'use strict';
+angular.module('baseApp').
+    controller('logOutController', ['$scope', '$http', '$rootScope', function($scope, $http, $rootScope) {
 
   Parse.User.logOut();
   console.log("OK");

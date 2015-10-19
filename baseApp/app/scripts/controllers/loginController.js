@@ -1,5 +1,6 @@
-
-angular.controller('loginController', ['$scope', '$http','$rootScope', function($scope, $http, $rootScope) {
+'use strict';
+angular.module('baseApp').
+    controller('loginController', ['$scope', '$http','$rootScope', function($scope, $http, $rootScope) {
     $scope.login = login;
 
     function login(){

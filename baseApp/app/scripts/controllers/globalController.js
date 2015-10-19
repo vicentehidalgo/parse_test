@@ -1,4 +1,6 @@
-angular.controller('globalController', ['$scope', '$http', '$rootScope', function($scope, $http, $rootScope) {
+'use strict';
+angular.module('baseApp').
+	controller('globalController', ['$scope', '$http', '$rootScope', function($scope, $http, $rootScope) {
 
 	$scope.init = function(){
     // console.log('asdasdadasd');

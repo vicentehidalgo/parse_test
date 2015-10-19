@@ -1,5 +1,6 @@
-
-angular.controller('transactionsController', ['$scope', '$http', function($scope, $http) {
+'use strict';
+angular.module('baseApp').
+    controller('transactionsController', ['$scope', '$http', function($scope, $http) {
 
     var transactions = Parse.Object.extend("transactions");
     var query = new Parse.Query(transactions);
