@@ -17,7 +17,7 @@
                         <tr ng-repeat="account in vm.accounts">
                             <td ng-bind="account.iban"></td>
                             <td ng-bind="account.name"></td>
-                            <td ng-bind="{{account.get('balance')}}+' €'"></td>
+                            <td ng-bind="account.balance +' €'"></td>
                         </tr>
                     </tbody>
                 </table>
