@@ -22,52 +22,52 @@ angular
     .when('/login', {
         templateUrl: 'views/login.html',
         controller: 'loginController',
-        controllerAs: 'login'
+        controllerAs: 'vm'
     })
     .when('/signUp', {
     	templateUrl: 'views/signUp.html',
     	controller: 'signUpController',
-        controllerAs: 'signUp'
+        controllerAs: 'vm'
     })
     .when('/home', {
         templateUrl: 'views/home.html',
         controller: 'homeController',
-        controllerAs: 'home'
+        controllerAs: 'vm'
     })
     .when('/logOut', {
         templateUrl: 'views/login.html',
         controller: 'logOutController',
-        controllerAs: 'logOut'
+        controllerAs: 'vm'
     })
     .when('/accounts', {
         templateUrl: 'views/accounts.html',
         controller: 'accountsController',
-        controllerAs: 'accounts'
+        controllerAs: 'vm'
     })
     .when('/transactions', {
         templateUrl: 'views/transactions.html',
         controller: 'transactionsController',
-        controllerAs: 'transactions'
+        controllerAs: 'vm'
     })
     .when('/withdrawn', {
         templateUrl: 'views/withdrawn.html',
         controller: 'withdrawnController',
-        controllerAs: 'withdrawn'
+        controllerAs: 'vm'
     })
     .when('/transfer', {
         templateUrl: 'views/transfer.html',
         controller: 'transferController',
-        controllerAs: 'transfer'
+        controllerAs: 'vm'
     })
     .when('/deposit', {
         templateUrl: 'views/deposit.html',
         controller: 'depositController',
-        controllerAs: 'deposit'
+        controllerAs: 'vm'
     })
     .when('/account/:accountNumber', {
         templateUrl: 'views/account.html',
         controller: 'accountController',
-        controllerAs: 'account'
+        controllerAs: 'vm'
     })
     .otherwise({
         redirectTo: '/home'

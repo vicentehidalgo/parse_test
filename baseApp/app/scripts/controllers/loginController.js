@@ -1,11 +1,22 @@
 'use strict';
 
 angular.module('baseApp')
-  .controller('loginController', ['$scope', '$http','$rootScope', function($scope, $http, $rootScope) {
-    $scope.login = login;
+  .controller('loginController', ['$http','$rootScope', function($http, $rootScope) {
+    var vm = this;
+    vm.user = {
+        // inputUserName: '',
+        // inputPassword: ''
+    };
+
+    // vm.user.inputUserName = 'vicente';
+    // vm.user.inputPassword = '1234';
+
+    vm.login = login;
 
     function login(){
-		Parse.User.logIn($scope.user.inputUserName, $scope.user.inputPassword, {
+        console.log('asdasdasd');
+        console.log(vm.user.inputUserName);
+		Parse.User.logIn(vm.user.inputUserName, vm.user.inputPassword, {
                   	success: userLoggedIn,
                     error: gotError
                   });
@@ -16,7 +27,7 @@ angular.module('baseApp')
 
 	function gotError(user, err) {
 		console.log("KO ", err);
-		alert("Error");
+		// alert("Error");
 	}
 
 }]);
