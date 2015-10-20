@@ -1,6 +1,7 @@
 'use strict';
-angular.module('baseApp').
-    controller('signUpController', ['$scope', '$http', function($scope, $http) {
+
+angular.module('baseApp')
+  .controller('signUpController', ['$scope', '$http', function($scope, $http) {
     $scope.signUp = signUp;
 
     function signUp(){

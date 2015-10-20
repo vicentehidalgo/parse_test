@@ -1,6 +1,7 @@
 'use strict';
-angular.module('baseApp').
-    controller('accountsController', ['$scope', '$http', function($scope, $http) {
+
+angular.module('baseApp')
+  .controller('accountsController', ['$scope', '$http', function($scope, $http) {
   $scope.init = init;
   $scope.accounts = [];
 

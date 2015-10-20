@@ -1,6 +1,7 @@
 'use strict';
-angular.module('baseApp').
-    controller('homeController', ['$scope', '$http', '$rootScope', function($scope, $http, $rootScope) {
+
+angular.module('baseApp')
+  .controller('homeController', ['$scope', '$http', '$rootScope', function($scope, $http, $rootScope) {
     $scope.init = init;
 
 
