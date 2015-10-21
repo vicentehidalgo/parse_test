@@ -1,0 +1,21 @@
+{
+  "name": "cloud",
+  "homepage": "https://github.com/vicentehidalgo/parse_test",
+  "authors": [
+    "vicente hidalgo <hidalgosantamaria@gmail.com>"
+  ],
+  "description": "shit",
+  "main": "main.js",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
