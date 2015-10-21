@@ -5,10 +5,14 @@ angular.module('baseApp')
 
 	$scope.init = function(){
     // console.log('asdasdadasd');
+    document.getElementsByClassName("navbar-toggle collapsed")[0].setAttribute("onclick", "mostrarMenu()")
 	    if (Parse.User.current() == null){
 	    	window.location = "#/login";
 	    }
 	}
+
+
+
 	if (Parse.User.current() == null){
 		$rootScope.global_menu = [
 			{title:'SignUp', url:'#/signUp'},
@@ -26,3 +30,18 @@ angular.module('baseApp')
 		$scope.user.nombre = Parse.User.current().get("username");
 	}
 }]);
+
+
+function mostrarMenu(argument) {
+
+  console.log("pepe");
+
+
+
+  if (document.getElementById("menu").style.display == "none"){
+    document.getElementById("menu").style.display = "block";
+
+  } else {
+    document.getElementById("menu").style.display = "none";
+  }
+}

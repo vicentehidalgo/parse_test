@@ -16,6 +16,18 @@
     <!-- endbuild -->
   </head>
   <body ng-app="baseApp" ng-controller="globalController" ng-init="init()">
+    <div id="menu" style="
+    width: 40%;
+    height: 100%;
+    /* position: relative; */
+    /* display: table; */
+    position: fixed;
+    z-index: 1000;
+    background-color: black;">
+    <li ng-repeat="elem in global_menu">
+        <a href="{{elem.url}}" ng-bind="elem.title"><span class="sr-only">(current)</span></a>
+    </li>
+    </div>
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
