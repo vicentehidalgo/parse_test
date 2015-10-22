@@ -2,6 +2,28 @@
     <div class="row">
         <div class="col-lg-12">
         	HOLA {{user.nombre}}!
+          <table class="table">
+              <thead>
+                  <tr>
+                      <th>concept</th>
+                      <th>name</th>
+                      <th>origin</th>
+                      <th>destination</th>
+                      <th>quantity</th>
+                      <th>type</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr ng-repeat="transaction in vm.transactions">
+                      <td ng-bind="transaction.concept"></td>
+                      <td ng-bind="transaction.name"></td>
+                      <td ng-bind="transaction.origin"></td>
+                      <td ng-bind="transaction.destination"></td>
+                      <td ng-bind="transaction.quantity +' €'"></td>
+                      <td ng-bind="transaction.type"></td>
+                  </tr>
+              </tbody>
+          </table>
         </div>
     </div>
 </div>

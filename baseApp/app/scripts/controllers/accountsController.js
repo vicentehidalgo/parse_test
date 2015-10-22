@@ -11,10 +11,16 @@ angular.module('baseApp')
      // alert("Successfully retrieved " + results.length);
      console.log(results[0].get('balance'));
      vm.accounts = results;
-     for (var account in vm.accounts) {
+     /*for (var account in vm.accounts) {
        vm.accounts[account].iban = vm.accounts[account].get('iban');
        vm.accounts[account].name = vm.accounts[account].get('name');
        vm.accounts[account].balance = vm.accounts[account].get('balance');
+     }*/
+
+     for (var i = 0; i < vm.accounts.length; i++) {
+       vm.accounts[i].iban = vm.accounts[i].get('iban');
+       vm.accounts[i].name = vm.accounts[i].get('name');
+       vm.accounts[i].balance = vm.accounts[i].get('balance');
      }
      console.log(vm.accounts);
      $scope.$digest();
