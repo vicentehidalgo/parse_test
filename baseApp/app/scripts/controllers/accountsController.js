@@ -7,7 +7,13 @@ angular.module('baseApp')
   vm.accounts = [];
   vm.initOK = initOK;
   function initOK(results) {
-
+      Parse.Cloud.run('listAccounts',{},{
+      success: function(result){
+          console.log(result);
+      },
+      error: function(error) {
+        // alert("Error: " + error.code + " " + error.message);
+    }});
      // alert("Successfully retrieved " + results.length);
      console.log(results[0].get('balance'));
      vm.accounts = results;
@@ -24,12 +30,6 @@ angular.module('baseApp')
      }
      console.log(vm.accounts);
      $scope.$digest();
-
-     // Do something with the returned Parse.Object values
-     // for (var i = 0; i < results.length; i++) {
-     //   var object = results[i];
-     //   alert(object.id + ' - ' + object.get('playerName'));
-     // }
   }
   function init(){
     var account = Parse.Object.extend("account");
