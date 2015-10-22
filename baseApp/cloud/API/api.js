@@ -19,10 +19,10 @@ function getAccounts(request, response) {
     console.log('yeah log!');
 
     var query = new Parse.Query('account');
-query.count({
+query.find({
   success: function(number) {
-console.log(number);
-response.success("test yeah!" + number);},
+console.log(JSON.stringify(number,null,4));
+response.success("test yeah!" + JSON.stringify(number,null,4));},
 error: function(error) {
 // error is an instance of Parse.Error.
 }
